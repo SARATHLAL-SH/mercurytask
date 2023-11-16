@@ -1,0 +1,22 @@
+.inputArea{
+    margin: 20px;
+    padding-left: 5px;
+    width: 320px;
+    height: 30px;
+    font-size: 18px;
+    border: none;
+    border-bottom: 3px solid rgb(0, 221, 255);
+    color: white;
+    background-color: transparent;
+}
+
+.inputArea:focus{
+    outline: none;
+    border-bottom: 3px solid rgb(255, 0, 200);
+}
+
+@media screen and (max-width:350px) {
+    .inputArea{
+        width: 250px;
+    }  
+}

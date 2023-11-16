@@ -1,0 +1,91 @@
+.head{
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    outline: 1px solid black;
+    color: transparent;
+    text-align: center;
+    -webkit-text-stroke: 0.1vw #08b4fe;
+    background: rgb(2, 104, 133);
+    background-repeat: no-repeat;
+    -webkit-background-clip: text;
+    padding-top: 10px;
+    letter-spacing: 2px;
+}
+
+.wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin:  6% auto;
+    
+}
+.userContainer{
+    position: relative;
+}
+
+.textContainer,.btnContainer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.btnContainer{
+    margin-left: 40px;
+}
+
+.googlebtnContainer,.facebookBtnContainer{
+    position: relative;
+    margin-bottom: 10px;
+}
+
+.googlelogoContainer,.facebooklogoContainer{
+    position: absolute;
+    transition: transform 0.5s ease-in-out;
+}
+
+.googlelogoContainer{
+    width: 20px;
+    top: 20px;
+    left: 19px;
+}
+
+.facebooklogoContainer{
+    width: 25px;
+    top:18px;
+    z-index: 4;
+    left: 15.5px;
+}
+
+.googlelogo,.facebooklogo{
+    width: 100%;
+    transition: transform 0.5s ease-in;
+}
+
+.googlebtnContainer:hover .googlelogo{
+    transform:translateX(130px) rotate(720deg);
+}
+
+.googlebtnContainer:hover .googlelogoContainer{
+    transform: scale(1.8);
+}
+
+.facebookBtnContainer:hover .facebooklogo{
+    transform:  rotate(360deg)
+}
+
+.facebookBtnContainer:hover .facebooklogoContainer{
+    transform: scale(1.5);
+}
+
+@media screen and (max-width:750px) {
+    .wrapper {
+        flex-direction: column;
+    }
+    .btnContainer{
+        margin-left: 0px;
+    }
+}
+
+  
