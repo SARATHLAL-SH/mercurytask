@@ -9,6 +9,8 @@ import Googlebtn from "../GoogleBtn/Googlebtn";
 import { useNavigate } from "react-router-dom";
 
 function Signup() {
+ 
+  
   const navigate = useNavigate();
   const [textValue, setTextValue] = useState({
     user: "",
@@ -16,7 +18,8 @@ function Signup() {
     password: "",
     conformPassword: "",
   });
-
+  console.log(textValue)
+  
   const inputHandleChange = (name, value) => {
     setTextValue((prev) => ({ ...prev, [name]: value }));
   };
@@ -26,6 +29,7 @@ function Signup() {
     if (textValue.password !== textValue.conformPassword) {
       alert("Password and Conform Password should be match");
     } else {
+      
       localStorage.setItem("name", textValue.user);
       localStorage.setItem("email", textValue.email);
       localStorage.setItem("password", textValue.password);

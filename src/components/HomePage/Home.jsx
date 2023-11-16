@@ -10,7 +10,7 @@ function Home() {
   return (
     <>
     <div className='homeContainer'>
-        <div className='homeUser'><h1>Welcome {user}</h1></div>
+        <div className='homeUser'><h1>Welcome {user.toUpperCase()}</h1></div>
         <span><i></i></span>
         <button className='homebtn' onClick={()=>navigate('/')}>Back</button>
     </div>
