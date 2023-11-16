@@ -28,6 +28,9 @@ function Signin() {
       });
       navigate("/home");
     }
+    else {
+        alert("Check your Email or Password");
+    }
   };
 
   return (
