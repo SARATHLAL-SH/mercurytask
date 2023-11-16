@@ -8,8 +8,7 @@ import FacebookBtn from "../FacebookBtn/FacebookBtn";
 import Googlebtn from "../GoogleBtn/Googlebtn";
 import { useNavigate } from "react-router-dom";
 
-const googleClientId =
-  "117478157521-iklakmrgqglf0rpadm6o9jek9agv8kkk.apps.googleusercontent.com";
+
 
 function Signup() {
   const navigate = useNavigate();
@@ -76,14 +75,14 @@ else{
         <div className="btnContainer">
           <div className="googlebtnContainer">
             <div className="googlelogoContainer">
-              <img className="googlelogo" src={googleLogo} />
+              <img className="googlelogo" alt="" src={googleLogo} />
             </div>
             <Googlebtn />
           </div>
 
           <div className="facebookBtnContainer">
             <div className="facebooklogoContainer">
-              <img className="facebooklogo" src={facebookLogo} />
+              <img className="facebooklogo" alt="" src={facebookLogo} />
             </div>
             <FacebookBtn />
           </div>

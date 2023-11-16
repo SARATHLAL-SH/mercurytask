@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react'
+import React from 'react'
 import '../HomePage/Home.css'
 import { useNavigate } from 'react-router-dom';
 
