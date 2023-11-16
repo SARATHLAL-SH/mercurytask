@@ -6,9 +6,7 @@
     color: transparent;
     text-align: center;
     -webkit-text-stroke: 0.1vw #08b4fe;
-    background: rgb(2, 104, 133);
     background-repeat: no-repeat;
-    -webkit-background-clip: text;
     padding-top: 10px;
     letter-spacing: 2px;
 }
