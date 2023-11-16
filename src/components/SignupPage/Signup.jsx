@@ -3,12 +3,10 @@ import TextInput from "../CustomInputs/CustomInputs";
 import CustomButton from "../CustomButtons/CustomButton";
 import googleLogo from "../../Images/goolgebgr.png";
 import facebookLogo from "../../Images/facebooklogo.png";
-import "../Signup/Signup.css";
+import "./Signup.css";
 import FacebookBtn from "../FacebookBtn/FacebookBtn";
 import Googlebtn from "../GoogleBtn/Googlebtn";
 import { useNavigate } from "react-router-dom";
-
-
 
 function Signup() {
   const navigate = useNavigate();
@@ -25,22 +23,21 @@ function Signup() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-      if (textValue.password !== textValue.conformPassword) {
+    if (textValue.password !== textValue.conformPassword) {
       alert("Password and Conform Password should be match");
-      }
-else{
-    localStorage.setItem("name", textValue.user);
-    localStorage.setItem("email", textValue.email);
-    localStorage.setItem("password", textValue.password);
-    setTextValue({ user: "", email: "", password: "", conformPassword: "" });
-    navigate("/signin");
-}
+    } else {
+      localStorage.setItem("name", textValue.user);
+      localStorage.setItem("email", textValue.email);
+      localStorage.setItem("password", textValue.password);
+      setTextValue({ user: "", email: "", password: "", conformPassword: "" });
+      navigate("/signin");
+    }
   };
 
   return (
     <div className="container">
       <h1 className="head">Create Account</h1>
-    <div className="wrapper">
+      <div className="wrapper">
         <form className="textContainer" onSubmit={handleSubmit}>
           <TextInput
             type="text"
