@@ -2,7 +2,7 @@
     font-size: 2rem;
     font-weight: 700;
     margin-bottom: 1rem;
-    outline: 1px solid black;
+    box-shadow: 2px 4px 8px rgb(60, 60, 60);
     color: transparent;
     text-align: center;
     -webkit-text-stroke: 0.1vw #08b4fe;
