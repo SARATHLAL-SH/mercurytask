@@ -18,18 +18,7 @@ const FacebookBtn = () => {
       >
         <FacebookLoginButton style={{ width: "320px" }} />
       </LoginSocialFacebook>
-      {/* <FacebookLogin
-  appId="1088597931155576"
-  onSuccess={(response) => {
-    console.log('Login Success!', response);
-  }}
-  onFail={(error) => {
-    console.log('Login Failed!', error);
-  }}
-  onProfileSuccess={(response) => {
-    console.log('Get Profile Success!', response);
-  }}
-/> */}
+      
     </div>
   );
 };
