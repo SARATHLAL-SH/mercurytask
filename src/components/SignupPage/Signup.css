@@ -5,10 +5,10 @@
     box-shadow: 2px 4px 8px rgb(60, 60, 60);
     color: transparent;
     text-align: center;
-    -webkit-text-stroke: 0.1vw #08b4fe;
-    background-repeat: no-repeat;
+    color: rgb(120, 120, 251);
     padding-top: 10px;
     letter-spacing: 2px;
+    text-shadow: 2px 4px 4px black;
 }
 
 .wrapper {
@@ -46,14 +46,14 @@
 .googlelogoContainer{
     width: 20px;
     top: 20px;
-    left: 19px;
+    left: 18.2px;
 }
 
 .facebooklogoContainer{
     width: 25px;
-    top:18px;
+    top:17.8px;
     z-index: 4;
-    left: 15.5px;
+    left: 15.6px;
 }
 
 .googlelogo,.facebooklogo{
